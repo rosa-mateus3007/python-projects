@@ -9,11 +9,11 @@ def situação(media):
     else:
         return "Reprovado!"
 
-continuar = "sim"
-while continuar =="sim":
+continuar = "SIM"
+while continuar =="SIM":
     n1 = float(input("Nota 1: "))
     n2 = float(input("Nota 2: "))
     n3 = float(input("Nota 3: "))
     media = calcular_media(n1, n2, n3)
     print(f"Média: {media} - situação: {situação(media)}")
-    continuar = input("Calcular outra média? (sim/não): ").lower()
+    continuar = input("Calcular outra média? (sim/não): ").upper()
