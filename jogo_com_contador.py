@@ -1,8 +1,9 @@
+import random
 def jogo_com_contador():
     numero = random.randint(1, 20)
     return numero
 tentativas = 0
-segredo = jogo_simples()
+segredo = jogo_com_contador()
 while True:
     tentativas += 1
     palpite = int(input("Palpite: "))
