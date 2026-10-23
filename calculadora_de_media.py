@@ -19,6 +19,6 @@ while continuar =="sim":
     n3 = float(input("Nota 3° Bimestre: "))
     n4 = float(input("Nota 4° Bimestre: "))
     media = calcular_media(n1, n2, n3, n4)
-    print(f"\nMédia anual: {media:.01f} | Situação: {situação(media)}")
+    print(f"\nMédia anual: {media:.1f} | Situação: {situação(media)}")
     continuar = input("\nDeseja calcular outra média? (sim/não): ").lower()
 print("\nPrograma encerrado. Até a próxima!")
